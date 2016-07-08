@@ -51,7 +51,7 @@ class MainWindow(QWidget):
         if self.appFile:
             self.hide()
             try:
-                subprocess.call(['C:/Python27/python.exe', self.appFile])
+                subprocess.call(['python2', self.appFile])
             except Exception:
                 raise
             finally:
